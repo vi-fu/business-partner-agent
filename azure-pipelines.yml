@@ -1,9 +1,17 @@
 trigger:
-- master
+- feature/test-service-connection
 
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  dockerRegistryServiceConnection: 'EconomyOfThingsDockerRegistryConnection'
+
 steps:
 - script: echo Just a dummy pipeline.
   displayName: 'Dummy pipeline'
+- task: Docker@2
+  displayName: Login to ACR
+  inputs:
+    command: login
+    containerRegistry: $(dockerRegistryServiceConnection)  
