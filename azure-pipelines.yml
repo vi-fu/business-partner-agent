@@ -8,8 +8,8 @@ variables:
   dockerRegistryServiceConnection: 'EconomyOfThingsDockerRegistryConnection'
 
 steps:
-- script: echo Just a dummy pipeline.
-  displayName: 'Dummy pipeline'
+- script: echo Just testing Azure Devops
+  displayName: 'Just testing Azure Devops'
 - task: Docker@2
   displayName: Login to ACR
   inputs:
