@@ -126,7 +126,7 @@ If you have setup ngrok you can use the `start-with-tunnels.sh` script to start 
 ```s
 ./start-with-tunnels.sh
 ```
-To terminate all ngrok tunnels you can use
+To terminate all ngrok tunnels you can use 
 ```s
 ./kill-tunnels.sh
 ```
